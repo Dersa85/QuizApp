@@ -63,6 +63,22 @@
     height: 100%;
 }
 
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    filter: brightness(0.97);
+}
+
+.answer-btn-success {
+    background-color: lightgreen;
+}
+
+.answer-btn-fail {
+    background-color: rgb(214, 76, 76);
+}
+
 .sub-content {
     height: calc(100% - 60px);
 }

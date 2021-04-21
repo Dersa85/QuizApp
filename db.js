@@ -9,7 +9,7 @@ function getSelectedQuestionDB() {
 const htmlQuestions = [
     {
         'question' : 'Was bewirkt das HTML-Element &lt;b&gt;&lt;/b&gt;',
-        'anserId' : 2,
+        'answerId' : 2,
         'answers' : [
             'Die HTML Seite wird breiter',
             'Dient nur als Platzhalter',
@@ -19,7 +19,7 @@ const htmlQuestions = [
     },
     {
         'question' : 'Was bewirkt der HTML-Tag &lt;br&gt;',
-        'anserId' : 3,
+        'answerId' : 3,
         'answers' : [
             'Die Seite wird nur bis zu dem Tag angezeigt',
             'Das runter scrollen wir danach verhindert',
@@ -29,7 +29,7 @@ const htmlQuestions = [
     },
     {
         'question' : 'Was bewirkt der HTML-Tag &lt;!DOCTYPE html&gt;',
-        'anserId' : 2,
+        'answerId' : 2,
         'answers' : [
             'Verhindert das lesen des Documents für alle Programme ausser ein Browser',
             'Ist nur ein Hinweis für das Entwickler-Team',
@@ -39,7 +39,7 @@ const htmlQuestions = [
     },
     {
         'question' : 'Wofür wird &lt;head&gt;&lt;/head&gt; gebraucht',
-        'anserId' : 0,
+        'answerId' : 0,
         'answers' : [
             'Allgemeine Einstellungen werden hier definiert',
             'Das ist der Teil der ganz oben auf der Seite Sichtbar ist',
@@ -49,7 +49,7 @@ const htmlQuestions = [
     },
     {
         'question' : 'Welche Schreibweise ist richtig',
-        'anserId' : 0,
+        'answerId' : 0,
         'answers' : [
             '&lt;p&gt;Hallo Welt&lt;/p&gt;',
             '&lt;p Hallo Welt&gt;&lt;/p&gt;',
@@ -59,7 +59,7 @@ const htmlQuestions = [
     },
     {
         'question' : 'Wie groß darf eine HTML Seite maximal sein',
-        'anserId' : 3,
+        'answerId' : 3,
         'answers' : [
             '1024 Zeilen',
             '10000 Zeilen',
@@ -69,7 +69,7 @@ const htmlQuestions = [
     },
     {
         'question' : 'Welche Schreibweise ist richtig um ein einfachen Link zu erstellen',
-        'anserId' : 2,
+        'answerId' : 2,
         'answers' : [
             '&lt;a href="nextPage.html"&gt;&lt;/a&gt;',
             '&lt;a&gt;nextPage&lt;/a&gt;',
@@ -79,7 +79,7 @@ const htmlQuestions = [
     },
     {
         'question' : 'Wer hat HTML erfunden',
-        'anserId' : 0,
+        'answerId' : 0,
         'answers' : [
             'Tim Berners-Lee',
             'Thomas Edison',
@@ -89,7 +89,7 @@ const htmlQuestions = [
     },
     {
         'question' : 'Was bedeutet es wenn eine Webseite "responsiv" ist',
-        'anserId' : 3,
+        'answerId' : 3,
         'answers' : [
             'Beschreibt eine Hübsche Webseite',
             'Bedeutet das die Fertig Entwickelt wurde',
@@ -99,7 +99,7 @@ const htmlQuestions = [
     },
     {
         'question' : 'Wann wurde HTML Erstveröffentlicht',
-        'anserId' : 2,
+        'answerId' : 2,
         'answers' : [
             '1990',
             '1991',
