@@ -7,6 +7,12 @@ function createMainSceen() {
     document.getElementById('main-container').innerHTML = template;
 }
 
+function createEndSceen() {
+    let template = getFinishFrame();
+    template += getResultFooterTemplate();
+    document.getElementById('main-container').innerHTML = template;
+}
+
 function createQuestionSceen(index) {
     let template = getQuestionFrameTemplate(index);
     template += getQuestionFooterTemplate(index + 1);
@@ -33,6 +39,16 @@ function getMainSceen() {
                     <p class="ft-align-center">Suche dir Links die Rubrik aus und dann drück unten auf Start</p>
                 </div>
             </div>
+        </div>
+    `;
+}
+
+function getFinishFrame() {
+    return `
+        <div class="content flex-all-center-column">
+            <img class="img-result" src="img/brainResult.png">
+            <h2>HTML QUIZ FERTIG</h2>
+            <p><b>ANTWORTEN RICHTIG: 10/10</b></p>
         </div>
     `;
 }
@@ -72,6 +88,14 @@ function getStartSceneFooterTemplate() {
     <div id="footer">
         <button type="button" class="btn btn-primary" onclick="createQuestionSceen(0)">Start</button>
     </div>
+    `;
+}
+
+function getResultFooterTemplate() {
+    return `
+        <div id="footer">
+            <button type="button" class="btn btn-primary" onclick="createMainSceen()">Neues Spiel</button>
+        </div>
     `;
 }
 
