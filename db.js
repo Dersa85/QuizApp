@@ -1,5 +1,6 @@
 let selectedQuestionDB = 'HTML';
 let answeredCorrectly = 0;
+let canGetAnswer = true;
 
 function getSelectedQuestionDB() {
     if (selectedQuestionDB == 'HTML') {

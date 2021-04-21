@@ -85,13 +85,13 @@ function getQuestionFooterTemplate(nextId) {
     if (nextId >= maxQuestions) {
         return `
             <div id="footer">
-                <button type="button" class="btn btn-primary" onclick="createEndSceen()">Auswertung</button>
+                <button id="footer-btn" type="button" class="btn btn-primary" disabled onclick="createEndSceen()">Auswertung</button>
             </div>
         `;
     } else {
         return `
             <div id="footer">
-                <button type="button" class="btn btn-primary" onclick="createQuestionSceen(${nextId})">Nächste</button>
+                <button id="footer-btn" type="button" class="btn btn-primary" disabled onclick="createQuestionSceen(${nextId})">Nächste</button>
             </div>
         `;
     }
