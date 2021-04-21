@@ -1,0 +1,93 @@
+
+
+function createMainSceen() {
+    let template = getMainSceen();
+    template += getStartSceneFooterTemplate();
+
+    document.getElementById('main-container').innerHTML = template;
+}
+
+function createQuestionSceen(index) {
+    let template = getQuestionFrameTemplate(index);
+    template += getQuestionFooterTemplate(index + 1);
+    document.getElementById('main-container').innerHTML = template;
+}
+
+function getMainSceen() {
+    return `
+    <div class="content flex">
+            <div id="nav-container">
+                <img src="img/logo.png" id="nav-logo">
+                <div>
+                    <button type="button" id="nav-btn-0" class="nav-button nav-button-activ">HTML</button>
+                    <button type="button" id="nav-btn-1" class="nav-button">CSS</button>
+                    <button type="button" id="nav-btn-2" class="nav-button">JS</button>
+                    <button type="button" id="nav-btn-3" class="nav-button">Java</button>
+                    <p>asd</p>
+                </div>
+            </div>
+            <div class="full-size">
+                <div class="flex-all-center-column sub-content">
+                    <h2>QuizApp</h2>
+                    <p style="margin-bottom: 0;" class="ft-align-center">Willkommen und ich wünsche dir viel Spass beim Quiz</p>
+                    <p class="ft-align-center">Suche dir Links die Rubrik aus und dann drück unten auf Start</p>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function getQuestionFrameTemplate(questionIndex) {
+    let template = ' <div class="quiz-field ">'
+    template += `<h2>${getQuestion(questionIndex)}</h2>`;
+    template += getAnswersTemplate(questionIndex);
+    template += '</div>'
+    return template;
+}
+
+function getQuestion(index) {
+    return getSelectedQuestionDB()[index]['question'];
+}
+
+// Answer Template
+function getAnswersTemplate(questionIndex) {
+    let question = getSelectedQuestionDB()[questionIndex];
+    let template = '';
+    for (let i = 0; i < question['answers'].length; i++) {
+        let answer = question['answers'][i];
+        template += `
+        <div class="card">
+            <div class="card-body">
+                ${answer}
+            </div>
+        </div>
+        `;
+    }
+    return template;
+}
+
+// Footer Template
+function getStartSceneFooterTemplate() {
+    return `
+    <div id="footer">
+        <button type="button" class="btn btn-primary" onclick="createQuestionSceen(0)">Start</button>
+    </div>
+    `;
+}
+
+function getQuestionFooterTemplate(nextId) {
+    let maxQuestions = getSelectedQuestionDB().length;
+    if (nextId >= maxQuestions) {
+        return `
+            <div id="footer">
+                <button type="button" class="btn btn-primary" onclick="createEndSceen()">Auswertung</button>
+            </div>
+        `;
+    } else {
+        return `
+            <div id="footer">
+                <button type="button" class="btn btn-primary" onclick="createQuestionSceen(${nextId})">Nächste</button>
+            </div>
+        `;
+    }
+}

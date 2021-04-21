@@ -1,0 +1,151 @@
+#main-container {
+    background-color: lightgray;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    height: 80vh;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#nav-container {
+    background-color: midnightblue;
+    width: 250px;
+    height: calc(100% + 60px);
+}
+
+#nav-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    padding-top: 32px;
+    display: block;
+    width: 128px;
+    height: 128px;
+    object-fit: contain;
+}
+
+#footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 16px;
+    margin-bottom: 10px;
+}
+
+.nav-button {
+    display: block;
+    margin-bottom: 16px;
+    padding-left: 32px;
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border-width: 0;
+    color: rgb(201, 201, 201);
+    border-left: 4px solid transparent;
+    font-size: 2em;
+}
+
+.nav-button:hover {
+    color: white;
+}
+
+.nav-button-activ {
+    border-left: 4px solid white;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.sub-content {
+    height: calc(100% - 60px);
+}
+
+.bg-brain {
+    background-image: url("img/brainbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-victory {
+    background-image: url("img/tropy.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 60%;
+}
+
+.img-result {
+    width: auto;
+    height: 128px;
+    object-fit: contain;
+    margin-bottom: 8%;
+}
+
+#footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 16px;
+    margin-bottom: 10px;
+}
+
+.quiz-field {
+    text-align: center;
+    padding-right: 8px;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.quiz-field  h2{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.quiz-field div {
+    margin-bottom: 8px;
+}
+
+/* font and text */
+
+.ft-align-center {
+    text-align: center;
+}
+
+/* Flex */
+
+.flex {
+    display: flex;
+}
+
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-all-center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* display */
+.d-none {
+    display: none;
+}
+
+/* divers */
+
+.full-size {
+    width: 100%;
+    height: 100%;
+}
