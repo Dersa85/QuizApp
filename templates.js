@@ -28,7 +28,7 @@ function getFinishFrame() {
         <div class="content flex-all-center-column">
             <img class="img-result" src="img/brainResult.png">
             <h2>HTML QUIZ FERTIG</h2>
-            <p><b>ANTWORTEN RICHTIG: 10/10</b></p>
+            <p><b>DU HAST ${answeredCorrectly}/10 RICHTIG BEANTWORTET</b></p>
         </div>
     `;
 }

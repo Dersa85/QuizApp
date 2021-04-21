@@ -2,12 +2,12 @@
 function answerClicked(questionId, answerId) {
     let correctAnswerId = getSelectedQuestionDB()[questionId]['answerId'];
     if (correctAnswerId == answerId) {
+        answeredCorrectly++
         document.getElementById('answer-btn-' + answerId).classList.add('answer-btn-success');
     } else {
         document.getElementById('answer-btn-' + answerId).classList.add('answer-btn-fail');
         document.getElementById('answer-btn-' + correctAnswerId).classList.add('answer-btn-success');
     }
-    
 }
 
 function createMainSceen() {
