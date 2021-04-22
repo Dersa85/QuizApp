@@ -126,11 +126,13 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.quiz-field  h2{
+
+.quiz-field h2 {
     margin-top: 8%;
     margin-bottom: 8%;
 }
-.quiz-field > div {
+
+.quiz-field>div {
     margin-bottom: 4px;
 }
 
@@ -160,6 +162,7 @@
 }
 
 /* display */
+
 .d-none {
     display: none;
 }

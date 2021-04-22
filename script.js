@@ -1,5 +1,6 @@
 function resetParameter() {
     answeredCorrectly = 0;
+    selectedQuestionDB = 'HTML';
 }
 
 function answerClicked(questionId, answerId) {
@@ -54,11 +55,12 @@ function setGenre(genreId) {
     }
     document.getElementById('nav-btn-' + genreId).classList.add('nav-button-activ');
     selectedQuestionDB = questionCategorys[genreId];
-    // Work in Progress
-    let db_complete = 1;
-    if (genreId > db_complete - 1  ) {
+    // Work in Progress//////////////////
+    let db_complete = 2;
+    if (genreId > db_complete - 1) {
         document.getElementById('nav-info').innerHTML = 'In Arbeit!!!'
     } else {
         document.getElementById('nav-info').innerHTML = ''
     }
+    /////////////////////////////////////
 }
