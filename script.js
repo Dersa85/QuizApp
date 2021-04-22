@@ -42,9 +42,23 @@ function createQuestionSceen(index) {
 }
 
 function refreshProgressBar(questNumber) {
-    let progressbar = document.getElementById('progress-bar')
+    let progressbar = document.getElementById('progress-bar');
     let percentDone = questNumber / 10 * 100;
     progressbar.style = `width: ${percentDone}%`;
-    progressbar.innerHTML = `${questNumber} / 10`
-    
+    progressbar.innerHTML = `${questNumber} / 10`;
+}
+
+function setGenre(genreId) {
+    for (let i = 0; i < questionCategorys.length; i++) {
+        document.getElementById('nav-btn-' + i).classList.remove('nav-button-activ');
+    }
+    document.getElementById('nav-btn-' + genreId).classList.add('nav-button-activ');
+    selectedQuestionDB = questionCategorys[genreId];
+    // Work in Progress
+    let db_complete = 1;
+    if (genreId > db_complete - 1  ) {
+        document.getElementById('nav-info').innerHTML = 'In Arbeit!!!'
+    } else {
+        document.getElementById('nav-info').innerHTML = ''
+    }
 }

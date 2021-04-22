@@ -1,3 +1,4 @@
+let questionCategorys = ['HTML', 'CSS', 'JS', 'Java'];
 let selectedQuestionDB = 'HTML';
 let answeredCorrectly = 0;
 let canGetAnswer = true;
@@ -96,7 +97,7 @@ const htmlQuestions = [
         'question' : 'Was bedeutet es wenn eine Webseite "responsiv" ist',
         'answerId' : 3,
         'answers' : [
-            'Beschreibt eine Hübsche Webseite',
+            'Beschreibt eine hübsche Webseite',
             'Bedeutet das die Fertig Entwickelt wurde',
             'Jetzt kann man sie richtig Anschauen',
             'Heist die Seite passt sich der Anzeigegröße an'

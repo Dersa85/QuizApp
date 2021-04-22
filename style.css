@@ -131,7 +131,7 @@
     margin-bottom: 8%;
 }
 .quiz-field > div {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 /* font and text */
@@ -169,4 +169,8 @@
 .full-size {
     width: 100%;
     height: 100%;
+}
+
+#nav-info {
+    color: whitesmoke;
 }
