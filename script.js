@@ -1,3 +1,6 @@
+function resetParameter() {
+    answeredCorrectly = 0;
+}
 
 function answerClicked(questionId, answerId) {
     if (!canGetAnswer) {
@@ -19,6 +22,7 @@ function createMainSceen() {
     let template = getMainSceen();
     template += getStartSceneFooterTemplate();
     document.getElementById('main-container').innerHTML = template;
+    resetParameter();
 }
 
 function createEndSceen() {
