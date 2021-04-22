@@ -18,6 +18,7 @@ function answerClicked(questionId, answerId) {
         AUDIO_FAIL.play();
     }
     document.getElementById('footer-btn').disabled = false;
+    refreshProgressBar(questionId + 1);
 }
 
 function createMainSceen() {
@@ -38,4 +39,12 @@ function createQuestionSceen(index) {
     let template = getQuestionFrameTemplate(index);
     template += getQuestionFooterTemplate(index + 1);
     document.getElementById('main-container').innerHTML = template;
+}
+
+function refreshProgressBar(questNumber) {
+    let progressbar = document.getElementById('progress-bar')
+    let percentDone = questNumber / 10 * 100;
+    progressbar.style = `width: ${percentDone}%`;
+    progressbar.innerHTML = `${questNumber} / 10`
+    
 }

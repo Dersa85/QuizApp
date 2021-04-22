@@ -28,6 +28,11 @@
     object-fit: contain;
 }
 
+#progress {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
 #footer {
     height: 50px;
     display: flex;
@@ -125,7 +130,7 @@
     margin-top: 8%;
     margin-bottom: 8%;
 }
-.quiz-field div {
+.quiz-field > div {
     margin-bottom: 8px;
 }
 

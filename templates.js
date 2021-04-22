@@ -35,10 +35,21 @@ function getFinishFrame() {
 
 function getQuestionFrameTemplate(questionIndex) {
     let template = ' <div class="quiz-field ">'
+    template += getProgressBar(questionIndex);
     template += `<h2>${getQuestion(questionIndex)}</h2>`;
     template += getAnswersTemplate(questionIndex);
     template += '</div>'
     return template;
+}
+
+// Progressbar
+function getProgressBar(answerNumber) {
+    let percent = answerNumber / 10 * 100;
+    return `
+        <div id="progress" class="progress">
+            <div id="progress-bar" class="progress-bar" role="progressbar" style="width: ${percent}%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">${answerNumber} / 10</div>
+        </div>
+    `;
 }
 
 // Question
