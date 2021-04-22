@@ -11,9 +11,11 @@ function answerClicked(questionId, answerId) {
     if (correctAnswerId == answerId) {
         answeredCorrectly++
         document.getElementById('answer-btn-' + answerId).classList.add('answer-btn-success');
+        AUDIO_SUCCESS.play();
     } else {
         document.getElementById('answer-btn-' + answerId).classList.add('answer-btn-fail');
         document.getElementById('answer-btn-' + correctAnswerId).classList.add('answer-btn-success');
+        AUDIO_FAIL.play();
     }
     document.getElementById('footer-btn').disabled = false;
 }

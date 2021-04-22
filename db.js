@@ -2,6 +2,9 @@ let selectedQuestionDB = 'HTML';
 let answeredCorrectly = 0;
 let canGetAnswer = true;
 
+const AUDIO_SUCCESS = new Audio('audio/success.wav');
+const AUDIO_FAIL = new Audio('audio/fail.wav');
+
 function getSelectedQuestionDB() {
     if (selectedQuestionDB == 'HTML') {
         return htmlQuestions;
