@@ -1,9 +1,9 @@
 #main-container {
     background-color: lightgray;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 10vh;
-    height: 80vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 2vh;
+    height: 96vh;
     border-radius: 16px;
     overflow: hidden;
     display: flex;
