@@ -8,7 +8,6 @@ function getMainSceen() {
                     <button type="button" id="nav-btn-0" class="nav-button nav-button-activ" onclick="setGenre(0)">HTML</button>
                     <button type="button" id="nav-btn-1" class="nav-button" onclick="setGenre(1)">CSS</button>
                     <button type="button" id="nav-btn-2" class="nav-button" onclick="setGenre(2)">JS</button>
-                    <button type="button" id="nav-btn-3" class="nav-button" onclick="setGenre(3)">Java</button>
                     <p id="nav-info"></p>
                 </div>
             </div>

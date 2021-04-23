@@ -1,4 +1,4 @@
-let questionCategorys = ['HTML', 'CSS', 'JS', 'Java'];
+let questionCategorys = ['HTML', 'CSS', 'JS'];
 let selectedQuestionDB = 'HTML';
 let answeredCorrectly = 0;
 let canGetAnswer = true;
@@ -12,7 +12,7 @@ function getSelectedQuestionDB() {
     } if (selectedQuestionDB == 'CSS') {
         return cssQuestions;
     } else {
-        
+        return jsQuestions;
     }
 }
 
@@ -221,3 +221,106 @@ const cssQuestions = [
         ]
     }
 ];
+
+const jsQuestions = [
+    {
+        'question': 'Was ist JavaScript',
+        'answerId': 2,
+        'answers': [
+            'Ein Textformatierer',
+            'Anderer Name für Java',
+            'Eine Scriptsprache',
+            'Ein Ersatz für HTML und CSS'
+        ]
+    },
+    {
+        'question': 'Wann wurde JavaScript entwickelt',
+        'answerId': 0,
+        'answers': [
+            '1995',
+            '1997',
+            '2000',
+            '2007'
+        ]
+    },
+    {
+        'question': 'Wofür wurde JavaScript entwickelt',
+        'answerId': 2,
+        'answers': [
+            'Ist eine Erweiterung des Betriebssystems',
+            'Um komplexe Berechnungen zu ermöglichen',
+            'Als Erweiterung für HTML und CSS',
+            'Damit eine Internetseite geladen werden kann'
+        ]
+    },
+    {
+        'question': 'Wer hat JavaScript entwickelt',
+        'answerId': 3,
+        'answers': [
+            'Dr. Leonard McCoy',
+            'Nyota Uhura',
+            'Brad Pitt',
+            'Brendan Eich'
+        ]
+    },
+    {
+        'question': 'Was macht das Schlüsselwort "let"',
+        'answerId': 3,
+        'answers': [
+            'Erzwingt einen Ablauf',
+            'Startet eine Berechnung nur wenn möglich',
+            'Wird nur wegen der Übersicht verwendet',
+            'Erstellt ein neue Variable'
+        ]
+    },
+    {
+        'question': 'Wie erstellt man ein einfaches Objekt',
+        'answerId': 2,
+        'answers': [
+            'var x = [];',
+            'let x = ();',
+            'let x = {};',
+            'var x = ""'
+        ]
+    },
+    {
+        'question': 'Wofür ist das Schlüsselwort "const" gut',
+        'answerId': 1,
+        'answers': [
+            'Damit eine Funktion immer das gleiche macht',
+            'Damit eine Variable nicht geändert werden kann',
+            'So werden einfache Rechnungen gennant',
+            'So bleibt ein Code im Hintergrund aktiv'
+        ]
+    },
+    {
+        'question': 'Wo wird JavaScript heute meistens verwendet',
+        'answerId': 0,
+        'answers': [
+            'Im front-end Bereich',
+            'Im back-end Bereich',
+            'In der Serververwaltung',
+            'In einer Datenbank'
+        ]
+    },
+    {
+        'question': 'Wie löscht man Element/e aus einem Array',
+        'answerId': 1,
+        'answers': [
+            '.remove()',
+            '.splice()',
+            '.clear()',
+            '.destroy()'
+        ]
+    },
+    {
+        'question': 'Was ist die Gefahr bei "while (true) {...}"',
+        'answerId': 3,
+        'answers': [
+            'Damit wird der Code unbenutzbar',
+            'Mehr Fehlerquellen bei paralleler Verarbeitung',
+            'Der Code könnte langsamer werden',
+            'Der Code endet niemals'
+        ]
+    }
+]
