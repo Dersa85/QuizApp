@@ -1,6 +1,31 @@
 function resetParameter() {
     answeredCorrectly = 0;
     selectedQuestionDB = 'HTML';
+    shuffleAllQuestions();
+}
+
+function shuffleAllQuestions() {
+    shuffle(htmlQuestions);
+    shuffle(cssQuestions);
+    shuffle(jsQuestions);
+}
+
+function shuffleAnswers(question) {
+    let answerCopy = [...question['answers']];
+    shuffle(answerCopy);
+    for (let i = 0; i < answerCopy.length; i++) {
+        let correctAnswer = question['answers'][question['answerId']];
+        if (answerCopy[i] == correctAnswer) {
+            question['answerId'] = i;
+            question['answers'] = answerCopy;
+            break;
+        }
+        
+    }
+}
+
+function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
 }
 
 function answerClicked(questionId, answerId) {
@@ -10,7 +35,7 @@ function answerClicked(questionId, answerId) {
     let correctAnswerId = getSelectedQuestionDB()[questionId]['answerId'];
     canGetAnswer = false;
     if (correctAnswerId == answerId) {
-        answeredCorrectly++
+        answeredCorrectly++;
         document.getElementById('answer-btn-' + answerId).classList.add('answer-btn-success');
         AUDIO_SUCCESS.play();
     } else {
@@ -37,6 +62,7 @@ function createEndSceen() {
 
 function createQuestionSceen(index) {
     canGetAnswer = true;
+    shuffleAnswers(getSelectedQuestionDB()[index]);
     let template = getQuestionFrameTemplate(index);
     template += getQuestionFooterTemplate(index + 1);
     document.getElementById('main-container').innerHTML = template;

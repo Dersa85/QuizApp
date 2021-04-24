@@ -323,4 +323,4 @@ const jsQuestions = [
             'Der Code endet niemals'
         ]
     }
-]
+];

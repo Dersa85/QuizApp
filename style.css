@@ -1,3 +1,13 @@
+h2 {
+    font-size: 4vw;
+}
+p {
+    font-size: calc(1vw + 8px);
+}
+.card-body {
+    font-size: calc(1vw + 8px);
+}
+
 #main-container {
     background-color: lightgray;
     margin-left: 2vw;
@@ -128,8 +138,8 @@
 }
 
 .quiz-field h2 {
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .quiz-field>div {

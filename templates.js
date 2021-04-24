@@ -33,11 +33,11 @@ function getFinishFrame() {
 }
 
 function getQuestionFrameTemplate(questionIndex) {
-    let template = ' <div class="quiz-field ">'
+    let template = ' <div class="quiz-field ">';
     template += getProgressBar(questionIndex);
     template += `<h2>${getQuestion(questionIndex)}</h2>`;
     template += getAnswersTemplate(questionIndex);
-    template += '</div>'
+    template += '</div>';
     return template;
 }
 
