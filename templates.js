@@ -1,4 +1,9 @@
-// contentFrame
+
+/**
+ * Template for the welcome screen and selection buttons for the wanted category
+ * 
+ * @returns {string} - Html structure
+ */
 function getMainSceen() {
     return `
     <div class="content flex">
@@ -22,6 +27,11 @@ function getMainSceen() {
     `;
 }
 
+/**
+ * Template for the result screen
+ * 
+ * @returns {string} - Html structure
+ */
 function getFinishFrame() {
     return `
         <div class="content flex-all-center-column">
@@ -32,6 +42,12 @@ function getFinishFrame() {
     `;
 }
 
+/**
+ * Template for the question screen 
+ * 
+ * @param {number} questionIndex - This is the index from the array of the selected category
+ * @returns {string} - Html structure
+ */
 function getQuestionFrameTemplate(questionIndex) {
     let template = ' <div class="quiz-field ">';
     template += getProgressBar(questionIndex);
@@ -41,7 +57,12 @@ function getQuestionFrameTemplate(questionIndex) {
     return template;
 }
 
-// Progressbar
+/**
+ * Template for the Progressbar
+ * 
+ * @param {number} answerNumber - This is the number from completed questions
+ * @returns {string} - Html structure
+ */
 function getProgressBar(answerNumber) {
     let percent = answerNumber / 10 * 100;
     return `
@@ -51,12 +72,22 @@ function getProgressBar(answerNumber) {
     `;
 }
 
-// Question
+/**
+ * Get the question from the array
+ * 
+ * @param {number} index - This is the index from the questions array
+ * @returns  {string}
+ */
 function getQuestion(index) {
     return getSelectedQuestionDB()[index]['question'];
 }
 
-// Answer Template
+/**
+ * Template with all answer buttons
+ * 
+ * @param {number} questionIndex - This is the index from the questions array
+ * @returns {string} - Html structure
+ */
 function getAnswersTemplate(questionIndex) {
     let question = getSelectedQuestionDB()[questionIndex];
     let template = '';
@@ -73,7 +104,11 @@ function getAnswersTemplate(questionIndex) {
     return template;
 }
 
-// Footer Template
+/**
+ * Template with start-button in start screen
+ * 
+ * @returns {string} - Html structure
+ */
 function getStartSceneFooterTemplate() {
     return `
     <div id="footer">
@@ -82,6 +117,11 @@ function getStartSceneFooterTemplate() {
     `;
 }
 
+/**
+ * Template with end-button in end screen
+ * 
+ * @returns {string} - Html structure
+ */
 function getResultFooterTemplate() {
     return `
         <div id="footer">
@@ -90,6 +130,12 @@ function getResultFooterTemplate() {
     `;
 }
 
+/**
+ * Template with a button for the next question or result screen
+ * 
+ * @param {number} nextId This is the next question index
+ * @returns {string} - Html structure
+ */
 function getQuestionFooterTemplate(nextId) {
     let maxQuestions = getSelectedQuestionDB().length;
     if (nextId >= maxQuestions) {

@@ -1,4 +1,32 @@
-/** All available genres */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: db.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: db.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/** All available genres */
 let questionCategorys = ['HTML', 'CSS', 'JS']; // available questions category
 
 /** Selected genres */
@@ -36,7 +64,7 @@ function getSelectedQuestionDB() {
 /** HTML questions Array */
 const htmlQuestions = [
     {
-        'question': 'Was bewirkt das HTML-Element &lt;b&gt;&lt;/b&gt;',
+        'question': 'Was bewirkt das HTML-Element &amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;',
         'answerId': 2,
         'answers': [
             'Die HTML Seite wird breiter',
@@ -46,7 +74,7 @@ const htmlQuestions = [
         ]
     },
     {
-        'question': 'Was bewirkt der HTML-Tag &lt;br&gt;',
+        'question': 'Was bewirkt der HTML-Tag &amp;lt;br&amp;gt;',
         'answerId': 3,
         'answers': [
             'Die Seite wird nur bis zu dem Tag angezeigt',
@@ -56,7 +84,7 @@ const htmlQuestions = [
         ]
     },
     {
-        'question': 'Was bewirkt der HTML-Tag &lt;!DOCTYPE html&gt;',
+        'question': 'Was bewirkt der HTML-Tag &amp;lt;!DOCTYPE html&amp;gt;',
         'answerId': 2,
         'answers': [
             'Verhindert das lesen des Documents für alle Programme ausser ein Browser',
@@ -66,7 +94,7 @@ const htmlQuestions = [
         ]
     },
     {
-        'question': 'Wofür wird &lt;head&gt;&lt;/head&gt; gebraucht',
+        'question': 'Wofür wird &amp;lt;head&amp;gt;&amp;lt;/head&amp;gt; gebraucht',
         'answerId': 0,
         'answers': [
             'Allgemeine Einstellungen werden hier definiert',
@@ -79,10 +107,10 @@ const htmlQuestions = [
         'question': 'Welche Schreibweise ist richtig',
         'answerId': 0,
         'answers': [
-            '&lt;p&gt;Hallo Welt&lt;/p&gt;',
-            '&lt;p Hallo Welt&gt;&lt;/p&gt;',
-            '&lt;p&gt;&lt;/p Hallo Welt&gt;',
-            '&lt;p&gt;Hallo Welt;'
+            '&amp;lt;p&amp;gt;Hallo Welt&amp;lt;/p&amp;gt;',
+            '&amp;lt;p Hallo Welt&amp;gt;&amp;lt;/p&amp;gt;',
+            '&amp;lt;p&amp;gt;&amp;lt;/p Hallo Welt&amp;gt;',
+            '&amp;lt;p&amp;gt;Hallo Welt;'
         ]
     },
     {
@@ -99,10 +127,10 @@ const htmlQuestions = [
         'question': 'Welche Schreibweise ist richtig um ein einfachen Link zu erstellen',
         'answerId': 2,
         'answers': [
-            '&lt;a href="nextPage.html"&gt;&lt;/a&gt;',
-            '&lt;a&gt;nextPage&lt;/a&gt;',
-            '&lt;a href="nextPage.html"&gt;nextPage&lt;/a&gt;',
-            '&lt;a href="nextPage.html"&gt;'
+            '&amp;lt;a href="nextPage.html"&amp;gt;&amp;lt;/a&amp;gt;',
+            '&amp;lt;a&amp;gt;nextPage&amp;lt;/a&amp;gt;',
+            '&amp;lt;a href="nextPage.html"&amp;gt;nextPage&amp;lt;/a&amp;gt;',
+            '&amp;lt;a href="nextPage.html"&amp;gt;'
         ]
     },
     {
@@ -344,4 +372,26 @@ const jsQuestions = [
             'Der Code endet niemals'
         ]
     }
-];
+];</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#answerClicked">answerClicked</a></li><li><a href="global.html#answeredCorrectly">answeredCorrectly</a></li><li><a href="global.html#canGetAnswer">canGetAnswer</a></li><li><a href="global.html#createEndSceen">createEndSceen</a></li><li><a href="global.html#createMainSceen">createMainSceen</a></li><li><a href="global.html#createQuestionSceen">createQuestionSceen</a></li><li><a href="global.html#cssQuestions">cssQuestions</a></li><li><a href="global.html#getAnswersTemplate">getAnswersTemplate</a></li><li><a href="global.html#getFinishFrame">getFinishFrame</a></li><li><a href="global.html#getMainSceen">getMainSceen</a></li><li><a href="global.html#getProgressBar">getProgressBar</a></li><li><a href="global.html#getQuestion">getQuestion</a></li><li><a href="global.html#getQuestionFooterTemplate">getQuestionFooterTemplate</a></li><li><a href="global.html#getQuestionFrameTemplate">getQuestionFrameTemplate</a></li><li><a href="global.html#getResultFooterTemplate">getResultFooterTemplate</a></li><li><a href="global.html#getSelectedQuestionDB">getSelectedQuestionDB</a></li><li><a href="global.html#getStartSceneFooterTemplate">getStartSceneFooterTemplate</a></li><li><a href="global.html#htmlQuestions">htmlQuestions</a></li><li><a href="global.html#jsQuestions">jsQuestions</a></li><li><a href="global.html#questionCategorys">questionCategorys</a></li><li><a href="global.html#refreshProgressBar">refreshProgressBar</a></li><li><a href="global.html#resetParameter">resetParameter</a></li><li><a href="global.html#selectedQuestionDB">selectedQuestionDB</a></li><li><a href="global.html#setGenre">setGenre</a></li><li><a href="global.html#shuffle">shuffle</a></li><li><a href="global.html#shuffleAllQuestions">shuffleAllQuestions</a></li><li><a href="global.html#shuffleAnswers">shuffleAnswers</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Tue Jun 08 2021 17:27:26 GMT+0200 (Mitteleuropäische Sommerzeit)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
